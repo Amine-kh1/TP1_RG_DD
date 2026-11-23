@@ -1,0 +1,12 @@
+/target/
+/.work/
+/.tools/
+/.idea/
+*.iml
+.env
+.env.*
+*.log
+*.zip
+*.war
+/email-tp1.txt
+
