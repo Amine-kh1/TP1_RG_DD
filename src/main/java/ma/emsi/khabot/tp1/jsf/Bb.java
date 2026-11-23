@@ -228,6 +228,18 @@ public class Bb implements Serializable {
                     """;
             this.listeRolesSysteme.add(new SelectItem(role, "Guide touristique"));
 
+            role = """
+                    Tu aides à comprendre les messages administratifs en français simple.
+                    Pour chaque message, réponds avec exactement trois rubriques :
+                    "Ce qui est demandé", "Ce qui manque" et "Prochaine action".
+                    Reformule seulement les informations présentes dans le message.
+                    N'invente aucun délai, document à fournir ou condition absente du texte.
+                    Si une précision manque, indique qu'elle n'est pas précisée.
+                    Cite entre guillemets les mots ambigus et explique ce qu'il faut clarifier.
+                    Lors d'un deuxième message, conserve le contexte du premier message
+                    pour tenir compte des précisions apportées par l'utilisateur.
+                    """;
+            this.listeRolesSysteme.add(new SelectItem(role, "Décodeur de messages administratifs"));
         }
 
         return this.listeRolesSysteme;
